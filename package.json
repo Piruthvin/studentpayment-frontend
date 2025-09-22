@@ -1,0 +1,25 @@
+{
+  "name": "school-payments-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev:nodemon": "nodemon --watch vite.config.js --watch src --ext js,jsx,css --exec \"vite\""
+  },
+
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.8",
+    "nodemon": "^3.1.0"
+  }
+}
