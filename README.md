@@ -2,6 +2,21 @@
 
 React + Vite dashboard that consumes the backend API.
 
+## Setup & Installation
+1. Copy `.env.example` to `.env`
+```
+VITE_API_BASE=http://localhost:4000
+```
+2. Install dependencies
+```
+npm install
+```
+3. Run locally
+```
+npm run dev
+```
+Open http://localhost:5173
+
 ## Setup
 
 1. Copy `.env.example` to `.env`
@@ -23,6 +38,12 @@ Open http://localhost:5173
 - Status check and demo create-payment
 
 Login with the user you registered on the backend.
+
+## Environment Variables
+- `VITE_API_BASE` – backend base URL (e.g., `http://localhost:4000` for local, or your Render URL in production)
+
+Auth token handling:
+- After login, the JWT is stored in `localStorage` and sent as `Authorization: Bearer <token>` via `src/api.js` axios interceptor.
 
 ## Filters and Actions
 - Status filter supports multi-select (Success, Pending, Failed).
